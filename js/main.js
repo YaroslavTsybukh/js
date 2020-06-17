@@ -95,13 +95,21 @@ let btn = document.getElementById("start"),
     })
 
 
+    checkbox.addEventListener('click', function() {
+        if(appData.savings == true){
+            appDatasavings = false;
+        }else{
+            appData.savings = true;
+        }
+    });
+
 let appData = {
     budget: money,
     timeData: time,
     expenses: {},
     optionalExpenses: {},
     income: [],
-    savings: true,
+    savings: false,
     chooseExpenses: function () {
         for (let i = 0; i < 2; i++) {
             let a = prompt ("Введите обязательную статью расходов в этом месяце", ""),
