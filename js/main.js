@@ -92,10 +92,10 @@ let btn = document.getElementById("start"),
         let items = chooseIncome.value;
         appData.income = items.split(", ");
         incomeValue.textContent = appData.income;
-    })
+    });
 
 
-    checkbox.addEventListener('click', function() {
+    checkSavings.addEventListener('click', function() {
         if(appData.savings == true){
             appDatasavings = false;
         }else{
